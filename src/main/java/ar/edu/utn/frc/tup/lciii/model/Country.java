@@ -1,10 +1,6 @@
 package ar.edu.utn.frc.tup.lciii.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 import java.util.Map;
@@ -14,6 +10,7 @@ import java.util.Map;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Country {
     private String name;
     private long population;
@@ -22,4 +19,5 @@ public class Country {
     private String region;
     private List<String> borders;
     private Map<String, String> languages;
+    private String cca3;
 }
